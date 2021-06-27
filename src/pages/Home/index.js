@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import api from '../../services/api';
 
 import './styles.css';
@@ -14,10 +15,12 @@ import Card from '../../components/Card';
  * - .put() -> atualizar/Editar Informações
  * - .delete() -> deletar informações
  * 
- * .metodo(endpoint, body, config)
+ * axios.metodo(endpoint, body, config)
  * 
- * endpoint: url da requisoção -> base url, path (recurso) e query strings
- * ex.: ?name=Raissa&idade=22
+ * endpoint: url da requisição -> base url, path (recurso) e query strings
+ * ex.: ?name=Raissa&idade=22&sobrenome=queiroz
+ * 
+ *  https://api.gastronomia.com/vinhos?pais=brasil&regiao=sul&page=5
  * 
  * body: corpo da requisição (só é enviado no post e no put). 
  * - É onde as informações que você ta enviando vai
@@ -40,42 +43,38 @@ import Card from '../../components/Card';
 
 export default function Home(){
     const [usuario, setUsuario] = useState({
-        nome: 'Raissa Queiroz',
-        nome_usuario: 'raissaqueiroz',
-        biografia: 'Tewste Teste',
-        endereco: 'Brazil',
-        linkedin: 'https://linkedin.com/in/raissaqueiroz',
-        avatar: 'https://avatars.githubusercontent.com/u/48663408?v=4'
+        nome: '',
+        nome_usuario: '',
+        biografia: '',
+        endereco: '',
+        linkedin: '',
+        avatar: ''
     });
     const [respositorios, setRepositorios] = useState([]);
 
-    // Popula as Informações do Usuário
+    // Informações do Usuário
     useEffect(() => {
-        async function load(){
-
-            const resposta = await api.get('/users/raissaqueiroz');
-
-            setUsuario({
-                nome: resposta.data.name,
-                nome_usuario: resposta.data.login,
-                biografia: resposta.data.bio,
-                endereco: resposta.data.location,
-                linkedin: resposta.data.blog,
-                avatar: resposta.data.avatar_url
-            });
-        }
-
-        load();
+        (async () => {
+            try {
+                const resposta = await api.get('/users/raissaqueiroz');
+                setUsuario({
+                    nome: resposta.data.name,
+                    nome_usuario: resposta.data.login,
+                    biografia: resposta.data.bio,
+                    endereco: resposta.data.location,
+                    linkedin: resposta.data.blog,
+                    avatar: resposta.data.avatar_url
+                });
+            } catch(err){
+                console.log('Deu errado')
+            }
+        })() 
+        
         
     }, []);
-
-
-    useEffect(() => {
-
-    }, [])
    
 
-    // Carrega os Repositórios
+    // Informações dos Repositórios
     useEffect(() => {
         (async () => {
             try {
@@ -86,8 +85,6 @@ export default function Home(){
                 console.log('Deu errado')
             }
         })() 
-
-
     }, [])
 
 
@@ -98,6 +95,7 @@ export default function Home(){
                 {
                     respositorios.map(repo => (
                         <Card 
+                            key={repo.id}
                             nome={repo.name} 
                             descricao={repo.description} 
                             url={repo.html_url} 

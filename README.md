@@ -4,24 +4,13 @@
   <img src="https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI/blob/main/screenshoots/preview.png" width=800 height=400/>
 </p>
 
-## Aulas Extras que Gravei
+### Aulas Extras que Gravei
 
-Recomendo assistir na ordem em que se encontra
+Recomendo assistir na ordem em que se encontra, a do github é um complemento da primeira
 
 - [Aula Gravada de API com Autenticação Clique Aqui](https://drive.google.com/file/d/1-53e9g9G2KQ8lkSg2VhcdfWiLkGPLG3b/view?usp=sharing)
 
 - [Integração API do Github Clique Aqui](https://drive.google.com/file/d/1pywLGDnM1TbWxJTWYZCyofuc6iPY_YF3/view?usp=sharing)
-### Mão na Massa
-
-- [ ] Explicação Estrutura do Projeto que será Desenvolvido
-- [ ] Entendendo Estado e LifeCycle no React
-- [ ] Manipulando Arrays & Objetos com `useState` e `useEffect`
-- [ ] Entendendo Principais Conceitos API's
-- [ ] Estruturando Axios
-- [ ] Autenticação Github
-- [ ] Implementando Chamadas à API do Github
-- [ ] Tratamento de Erros (Catch)
-
 
 ## Guia de Instalação
 
