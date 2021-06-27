@@ -45,7 +45,7 @@ Antes de qualquer coisa, você precisa ter instaldo o [`NPM & Node`](https://nod
 agora sim, abra o seu terminal e rode os seguintes comandos em suas respectivas ordens:  
 
 - `git clone https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI.git` 
-- `cd helpper-webapp` 
+- `cd On10-TodasEmTech-RevisaoAPI` 
 - `yarn` (ou, caso não tenha o yarn instalado, `npm install`)
 - `yarn start` or `yarn dev` (ou, caso não tenha o yarn instalado, `npm start`  )
 
