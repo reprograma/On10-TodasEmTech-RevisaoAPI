@@ -4,23 +4,13 @@
   <img src="https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI/blob/main/screenshoots/preview.png" width=800 height=400/>
 </p>
 
-## Mapa da Aula de Revisão
+## Aulas Extras que Gravei
 
-Nessa aula além de revisar alguns pontos sobre ambiente, ciclos no react e API, iremos desenvolver um projeto juntas consumindo a tão temida API do Github, usando a atenticação.
+Recomendo assistir na ordem em que se encontra
 
+- [Aula Gravada de API com Autenticação Clique Aqui](https://drive.google.com/file/d/1-53e9g9G2KQ8lkSg2VhcdfWiLkGPLG3b/view?usp=sharing)
 
-### Introdução
-
-- [ ] Git Remote vs Git Clone
-- [ ] Instalação Limpa do React
-- [ ] NPM e Yarn
-- [ ] Package: Scripts, Dependências
-- [ ] Dependências e Dicas: DotEnv, React Icons, Input Mask, Etc
-- [ ] React Scripts: Live Reload
-- [ ] Variáveis de Ambiente
-- [ ] Dica CSS: Flexbox, Medidas Relativas e Clamp()
-- [ ]  Entendendo Estruturação HTML dentro de um Loop
-
+- [Integração API do Github Clique Aqui](https://drive.google.com/file/d/1pywLGDnM1TbWxJTWYZCyofuc6iPY_YF3/view?usp=sharing)
 ### Mão na Massa
 
 - [ ] Explicação Estrutura do Projeto que será Desenvolvido
@@ -131,7 +121,7 @@ Vou deixar aqui por escrito o que será abordado na aula, importante revisar qua
         useEffetc(() => {
         	async function load(){
         		try {
-        			await resposta= fetch('https://api.com.br/users');
+        			const resposta = await fetch('https://api.com.br/users');
         			console.log(resposta.data);
         		} catch(err){
         			console.log('Deu errado')
@@ -145,7 +135,7 @@ Vou deixar aqui por escrito o que será abordado na aula, importante revisar qua
         useEffetc(() => {
         	(async () => {
         		try {
-        			await resposta= fetch('https://api.com.br/users');
+        			const resposta= await fetch('https://api.com.br/users');
         			console.log(resposta.data);
         		} catch(err){
         			console.log('Deu errado')

@@ -9,6 +9,8 @@
     --gray-1-color: #D1D5DA;
     --gray-2-color: #959DA5;
     --gray-3-color: #6A737D;
+    --gray-4-color: #586069;
+    --gray-5-color: #24292E;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
@@ -20,7 +22,6 @@ img {max-width: 100%;}
 
 section {
     background: var(--gray-color);
-    height: 100vh; /*Ocupa a altura total do monitor*/
     width: 100%;
     display: flex;
     padding: 100px 5%;
@@ -31,4 +32,8 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#root {
+    height: 100vh; /*Ocupa a altura total do monitor*/
 }

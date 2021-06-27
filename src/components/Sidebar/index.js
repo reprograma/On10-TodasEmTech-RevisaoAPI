@@ -4,18 +4,18 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 import './styles.css';
 
-const Sidebar = () => (
+const Sidebar = ({ dados }) => (
     <aside>
-        <img src="https://avatars.githubusercontent.com/u/48663408?v=4" alt="Raissa Queiroz" />
-        <h1>Raissa Queiroz</h1>
-        <h3><em>@raissaqueiroz</em></h3>
-        <p>Estudante e Desenvolvedor Front-end com o princípio de evoluir pelo menos 1% diariamente e poder contribuir com quem necessitar.</p>
+        <img src={dados.avatar} alt={dados.nome} />
+        <h1>{dados.nome}</h1>
+        <h3><em>@{dados.nome_usuario}</em></h3>
+        <p>{dados.biografia}</p>
         <ul>
             <li>
-                <MdLocationOn/> Brasil, Rio de Janeiro - Duque de Caxias
+                <MdLocationOn/> {dados.endereco}
             </li>
             <li>
-                <FaLinkedinIn/> <a href="https://linkedin.com/in/raissaqueiroz">https://linkedin.com/in/raissaqueiroz</a>
+                <FaLinkedinIn/> <a href={dados.linkedin}>{dados.linkedin}</a>
             </li>
         </ul>
     </aside>
