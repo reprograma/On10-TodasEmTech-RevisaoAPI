@@ -1,7 +1,7 @@
 # Github Explorer
 
 <p align="center">
-  <img src="https://github.com/raissaqueiroz/github-explorer/blob/master/screenshoots/preview.png" width=600 height=200/>
+  <img src="https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI.git/blob/master/screenshoots/preview.png" width=600 height=200/>
 </p>
 
 ## Mapa da Aula de Revisão
@@ -44,7 +44,7 @@ Antes de qualquer coisa, você precisa ter instaldo o [`NPM & Node`](https://nod
 
 agora sim, abra o seu terminal e rode os seguintes comandos em suas respectivas ordens:  
 
-- `git clone https://github.com/raissaqueiroz/github-explorer.git` 
+- `git clone https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI.git` 
 - `cd helpper-webapp` 
 - `yarn` (ou, caso não tenha o yarn instalado, `npm install`)
 - `yarn start` or `yarn dev` (ou, caso não tenha o yarn instalado, `npm start`  )
