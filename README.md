@@ -1,7 +1,7 @@
 # Github Explorer
 
 <p align="center">
-  <img src="https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI.git/blob/master/screenshoots/preview.png" width=600 height=200/>
+  <img src="https://github.com/reprograma/On10-TodasEmTech-RevisaoAPI/blob/main/screenshoots/preview.png" width=800 height=400/>
 </p>
 
 ## Mapa da Aula de Revisão
