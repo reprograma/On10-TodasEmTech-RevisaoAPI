@@ -1,0 +1,68 @@
+:root {
+    --blue-color: #2188FF;
+    --yellow-color: #FFDF5D;
+    --dark-color: #343434;
+    --purple-color: #6F42C1;
+    --purple-light-color: #8A63D2;
+    --gray-color: #F2F2F2;
+    --gray-0-color: #FAFBFC;
+    --gray-1-color: #D1D5DA;
+    --gray-2-color: #959DA5;
+    --gray-3-color: #6A737D;
+    --gray-4-color: #586069;
+    --gray-5-color: #24292E;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+aside {
+    width: 30%;
+    height: 100%;
+}
+
+aside img {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+aside h1, aside h3, aside p {
+    font-family: 'Lato', sans-serif;
+}
+
+aside h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-5-color);
+}
+
+aside h3 {
+    color: var(--gray-4-color);
+    margin-bottom: 10px;
+}
+aside p {
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    color: var(--gray-3-color)
+}
+aside ul li, aside ul li svg {
+    font-family: 'Lato', sans-serif;
+}
+aside ul li, aside ul li a {
+    color: var(--gray-4-color) !important;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px
+}
+aside ul li svg {
+    fill: var(--gray-4-color) !important;
+    font-size: 1rem;
+    margin-right: 2%
+}
+aside ul {
+    list-style-type: none;
+    width: 80%;
+}
+

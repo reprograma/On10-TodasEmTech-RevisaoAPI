@@ -1,0 +1,61 @@
+:root {
+    --blue-color: #2188FF;
+    --yellow-color: #FFDF5D;
+    --dark-color: #343434;
+    --purple-color: #6F42C1;
+    --purple-light-color: #8A63D2;
+    --gray-color: #F2F2F2;
+    --gray-0-color: #FAFBFC;
+    --gray-1-color: #D1D5DA;
+    --gray-2-color: #959DA5;
+    --gray-3-color: #6A737D;
+    --gray-4-color: #586069;
+    --gray-5-color: #24292E;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+article.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 150px;
+    background: var(--gray-0-color);
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2%;
+    margin-right: 2%;
+    
+}
+
+article.card .col-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+article.card .col-9 h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-4-color);
+}
+
+article.card .col-9 p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: var(--gray-4-color);
+    margin-bottom: 20px;
+}
+
+article.card .col-9 span {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: var(--gray-2-color);
+}
+
+article.card .col-3 svg {
+    fill: var(--gray-4-color);
+    font-size: 2rem
+}
